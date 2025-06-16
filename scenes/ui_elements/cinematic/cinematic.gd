@@ -10,6 +10,7 @@ extends Node2D
 
 ## Animation player, to be used from [member dialogue] (if needed)
 @export var animation_player: AnimationPlayer
+#@onready var animation_sword: AnimationPlayer = $"../OnTheGround/AnimationSword"
 
 ## Scene to switch to once [member dialogue] is complete
 @export_file("*.tscn") var next_scene: String
@@ -21,6 +22,7 @@ extends Node2D
 
 
 func _ready() -> void:
+	#animation_sword.play("sword")
 	DialogueManager.show_dialogue_balloon(dialogue, "", [self])
 	await DialogueManager.dialogue_ended
 

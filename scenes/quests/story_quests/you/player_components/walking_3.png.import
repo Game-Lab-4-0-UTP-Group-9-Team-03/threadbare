@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgci3qn52ul5r"
-path="res://.godot/imported/template_guard_enemy_idle.png-b1a2ece348d1465e31fbaa5de37213fd.ctex"
+uid="uid://4pw070hd8swn"
+path="res://.godot/imported/walking_3.png-24916201d3ab7fa82402988de421a873.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/you/1_helm/helm_components/template_guard_enemy_idle.png"
-dest_files=["res://.godot/imported/template_guard_enemy_idle.png-b1a2ece348d1465e31fbaa5de37213fd.ctex"]
+source_file="res://scenes/quests/story_quests/you/player_components/walking_3.png"
+dest_files=["res://.godot/imported/walking_3.png-24916201d3ab7fa82402988de421a873.ctex"]
 
 [params]
 

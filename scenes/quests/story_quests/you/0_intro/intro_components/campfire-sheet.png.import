@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://r4u1t4ej41s"
-path="res://.godot/imported/template_sign.png-a6f17b9279d52a0eb7c846e1ee2f5a05.ctex"
+uid="uid://cp50as7x0wngy"
+path="res://.godot/imported/campfire-sheet.png-c1e55447ee1e2fa89e1c4f1df2ef6cc2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/you/3_shield/template_sign.png"
-dest_files=["res://.godot/imported/template_sign.png-a6f17b9279d52a0eb7c846e1ee2f5a05.ctex"]
+source_file="res://scenes/quests/story_quests/you/0_intro/intro_components/campfire-sheet.png"
+dest_files=["res://.godot/imported/campfire-sheet.png-c1e55447ee1e2fa89e1c4f1df2ef6cc2.ctex"]
 
 [params]
 
