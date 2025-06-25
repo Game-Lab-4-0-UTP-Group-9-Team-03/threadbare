@@ -282,7 +282,6 @@ position = Vector2(1458, -337)
 
 [node name="Character" type="AnimatedSprite2D" parent="OnTheGround"]
 position = Vector2(400, 349)
-scale = Vector2(3, 3)
 sprite_frames = ExtResource("4_vrnek")
 animation = &"idle"
 autoplay = "idle"
@@ -326,13 +325,13 @@ autoplay = "sword"
 script = ExtResource("6_3o05m")
 dialogue = ExtResource("7_qxltb")
 animation_player = NodePath("../OnTheGround/AnimationPlayer")
-next_scene = "uid://thwcu5akkqp5"
+next_scene = "uid://x3wm2ce0ax8i"
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 light_mask = 3
 position = Vector2(756, -83)
-color = Color(6.01634e-08, 0, 0.111867, 1)
+color = Color(2.70735e-08, 0, 0.15702, 1)
 
 [node name="Ambient_2" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("8_uovre")

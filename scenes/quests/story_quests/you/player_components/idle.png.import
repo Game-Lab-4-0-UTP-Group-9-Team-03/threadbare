@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8yoxhso4kql5"
-path="res://.godot/imported/walking_1.png-b97f8da08423bd868347bbead4fef3b4.ctex"
+uid="uid://bjmfcnywatcdo"
+path="res://.godot/imported/idle.png-4448e1a2f839191869538a67a898199a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/you/player_components/walking_1.png"
-dest_files=["res://.godot/imported/walking_1.png-b97f8da08423bd868347bbead4fef3b4.ctex"]
+source_file="res://scenes/quests/story_quests/you/player_components/idle.png"
+dest_files=["res://.godot/imported/idle.png-4448e1a2f839191869538a67a898199a.ctex"]
 
 [params]
 

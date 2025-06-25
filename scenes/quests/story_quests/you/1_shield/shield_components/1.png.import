@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xexkjqmphtrl"
-path="res://.godot/imported/golpe1.png-3acce2bb8253c64450dfad6e67841c94.ctex"
+uid="uid://bploshblwoyb2"
+path="res://.godot/imported/1.png-881b6100495400fae05991decdbb6271.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/you/player_components/golpe1.png"
-dest_files=["res://.godot/imported/golpe1.png-3acce2bb8253c64450dfad6e67841c94.ctex"]
+source_file="res://scenes/quests/story_quests/you/1_shield/shield_components/1.png"
+dest_files=["res://.godot/imported/1.png-881b6100495400fae05991decdbb6271.ctex"]
 
 [params]
 
