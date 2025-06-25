@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4pw070hd8swn"
-path="res://.godot/imported/walking_3.png-24916201d3ab7fa82402988de421a873.ctex"
+uid="uid://doty5a3kiuicg"
+path="res://.godot/imported/walking.png-d84c46eec3e968c87bb25e811e5dda55.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/you/player_components/walking_3.png"
-dest_files=["res://.godot/imported/walking_3.png-24916201d3ab7fa82402988de421a873.ctex"]
+source_file="res://scenes/quests/story_quests/you/player_components/walking.png"
+dest_files=["res://.godot/imported/walking.png-d84c46eec3e968c87bb25e811e5dda55.ctex"]
 
 [params]
 
