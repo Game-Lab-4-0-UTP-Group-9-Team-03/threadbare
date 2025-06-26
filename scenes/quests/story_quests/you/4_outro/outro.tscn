@@ -1,21 +1,21 @@
-[gd_scene load_steps=6 format=4 uid="uid://cqjdjcwwfg0xi"]
+[gd_scene load_steps=6 format=4 uid="uid://bvic6o4x6pn47"]
 
-[ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="1_7alai"]
-[ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="2_fo8rf"]
-[ext_resource type="SpriteFrames" uid="uid://vwf8e1v8brdp" path="res://scenes/quests/story_quests/you/player_components/template_player.tres" id="3_s3jrr"]
-[ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_0or7a"]
-[ext_resource type="Resource" uid="uid://qceybl5dvpcp" path="res://scenes/quests/story_quests/you/4_outro/outro_components/template_outro.dialogue" id="5_xllws"]
+[ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="1_kvb2g"]
+[ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="2_sd1af"]
+[ext_resource type="SpriteFrames" uid="uid://vwf8e1v8brdp" path="res://scenes/quests/story_quests/you/player_components/template_player.tres" id="3_v48q2"]
+[ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_55uvd"]
+[ext_resource type="Resource" uid="uid://qceybl5dvpcp" path="res://scenes/quests/story_quests/template/4_template_outro/template_outro_components/template_outro.dialogue" id="5_lve6n"]
 
 [node name="Outro" type="Node2D"]
 texture_filter = 1
 
-[node name="HUD" parent="." instance=ExtResource("1_7alai")]
+[node name="HUD" parent="." instance=ExtResource("1_kvb2g")]
 
 [node name="TileMapLayers" type="Node2D" parent="."]
 
 [node name="Ground" type="TileMapLayer" parent="TileMapLayers"]
 tile_map_data = PackedByteArray("AAAAAAUAAQAGAAMAAAABAAUAAQAGAAMAAAACAAUAAQAGAAMAAAADAAUAAQAGAAMAAAAEAAUAAQAGAAMAAAAFAAUAAQAGAAMAAAAGAAUAAQAGAAMAAAAHAAUAAQAGAAMAAAAIAAUAAQAGAAMAAAAJAAUAAQAGAAMAAAAKAAUAAQAGAAMAAAALAAUAAQAGAAMAAAAMAAUAAQAGAAMAAAANAAUAAQAGAAMAAAAOAAUAAQAGAAMAAAAAAAYAAQAAAAAAAAAAAAcAAQAAAAEAAAABAAYAAQABAAAAAAABAAcAAQABAAEAAAACAAYAAQABAAAAAAACAAcAAQABAAEAAAADAAYAAQABAAAAAAADAAcAAQABAAEAAAAEAAYAAQABAAAAAAAEAAcAAQABAAEAAAAFAAYAAQABAAAAAAAFAAcAAQABAAEAAAAGAAYAAQABAAAAAAAGAAcAAQABAAEAAAAHAAYAAQABAAAAAAAHAAcAAQABAAEAAAAIAAYAAQABAAAAAAAIAAcAAQABAAEAAAAJAAYAAQABAAAAAAAJAAcAAQABAAEAAAAKAAYAAQABAAAAAAAKAAcAAQABAAEAAAALAAYAAQABAAAAAAALAAcAAQABAAEAAAAMAAYAAQABAAAAAAAMAAcAAQABAAEAAAANAAYAAQABAAAAAAANAAcAAQABAAEAAAAOAAYAAQACAAAAAAAOAAcAAQACAAEAAAAAAAAAAQAAAAAAAAAAAAEAAQAAAAEAAAABAAEAAQABAAEAAAACAAEAAQABAAEAAAADAAEAAQABAAEAAAADAAIAAQABAAEAAAAEAAIAAQABAAEAAAAFAAIAAQABAAEAAAAFAAMAAQABAAEAAAABAAAAAQABAAAAAAABAAIAAQABAAEAAAAAAAIAAQAAAAEAAAAAAAMAAQAAAAEAAAAAAAQAAQAAAAIAAAABAAMAAQABAAEAAAABAAQAAQABAAIAAAACAAQAAQABAAIAAAACAAMAAQABAAEAAAACAAIAAQABAAEAAAADAAQAAQABAAIAAAADAAMAAQABAAEAAAAEAAMAAQABAAEAAAAEAAQAAQABAAIAAAAFAAQAAQABAAIAAAAGAAQAAQABAAIAAAAHAAQAAQABAAIAAAAIAAQAAQABAAIAAAAJAAQAAQABAAIAAAAKAAQAAQABAAIAAAALAAQAAQABAAIAAAAMAAQAAQABAAIAAAANAAQAAQABAAIAAAAOAAQAAQACAAIAAAAOAAMAAQACAAEAAAAOAAIAAQACAAEAAAAOAAEAAQACAAEAAAAOAAAAAQACAAAAAAANAAAAAQABAAAAAAAMAAAAAQABAAAAAAALAAAAAQABAAAAAAAKAAAAAQABAAAAAAAJAAAAAQABAAAAAAAIAAAAAQABAAAAAAAHAAAAAQABAAAAAAAGAAAAAQABAAAAAAAFAAAAAQABAAAAAAAEAAAAAQABAAAAAAACAAAAAQABAAAAAAADAAAAAQABAAAAAAAEAAEAAQABAAEAAAAFAAEAAQABAAEAAAAGAAEAAQABAAEAAAAHAAEAAQABAAEAAAAIAAEAAQABAAEAAAAJAAEAAQABAAEAAAAKAAEAAQABAAEAAAALAAEAAQABAAEAAAAMAAEAAQABAAEAAAANAAEAAQABAAEAAAANAAIAAQABAAEAAAANAAMAAQABAAEAAAAMAAMAAQABAAEAAAALAAMAAQABAAEAAAAKAAMAAQABAAEAAAAJAAMAAQABAAEAAAAIAAMAAQABAAEAAAAHAAMAAQABAAEAAAAGAAMAAQABAAEAAAAGAAIAAQABAAEAAAAHAAIAAQABAAEAAAAIAAIAAQABAAEAAAAJAAIAAQABAAEAAAAKAAIAAQABAAEAAAALAAIAAQABAAEAAAAMAAIAAQABAAEAAAAAAAgAAQAAAAIAAAABAAgAAQABAAIAAAACAAgAAQABAAIAAAADAAgAAQABAAIAAAAEAAgAAQABAAIAAAAFAAgAAQABAAIAAAAGAAgAAQABAAIAAAAHAAgAAQABAAIAAAAIAAgAAQABAAIAAAAJAAgAAQABAAIAAAAKAAgAAQABAAIAAAALAAgAAQABAAIAAAAMAAgAAQABAAIAAAANAAgAAQABAAIAAAAOAAgAAQACAAIAAAA=")
-tile_set = ExtResource("2_fo8rf")
+tile_set = ExtResource("2_sd1af")
 metadata/_edit_lock_ = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -33,14 +33,14 @@ y_sort_enabled = true
 
 [node name="Character" type="AnimatedSprite2D" parent="OnTheGround"]
 position = Vector2(400, 349)
-sprite_frames = ExtResource("3_s3jrr")
+sprite_frames = ExtResource("3_v48q2")
 animation = &"idle"
 autoplay = "idle"
 
 [node name="ScreenOverlay" type="CanvasLayer" parent="."]
 
 [node name="Cinematic" type="Node2D" parent="."]
-script = ExtResource("4_0or7a")
-dialogue = ExtResource("5_xllws")
+script = ExtResource("4_55uvd")
+dialogue = ExtResource("5_lve6n")
 next_scene = "uid://cufkthb25mpxy"
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://4ayu2nyp6p6h"
+path="res://.godot/imported/shield.dialogue-034112dc610b26530807cb920f706c69.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/you/1_shield/shield.dialogue"
+dest_files=["res://.godot/imported/shield.dialogue-034112dc610b26530807cb920f706c69.tres"]
+
+[params]
+
+defaults=true
