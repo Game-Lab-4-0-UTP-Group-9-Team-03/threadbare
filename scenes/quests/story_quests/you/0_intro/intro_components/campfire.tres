@@ -1,6 +1,6 @@
 [gd_resource type="SpriteFrames" load_steps=10 format=3 uid="uid://57k7dhourvod"]
 
-[ext_resource type="Texture2D" uid="uid://cp50as7x0wngy" path="res://scenes/quests/story_quests/you/0_intro/intro_components/campfire-sheet.png" id="1_1udin"]
+[ext_resource type="Texture2D" uid="uid://yx5dsc28qcwp" path="res://scenes/quests/story_quests/you/0_intro/intro_components/campfire-sheet.png" id="1_1udin"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q8bdj"]
 atlas = ExtResource("1_1udin")

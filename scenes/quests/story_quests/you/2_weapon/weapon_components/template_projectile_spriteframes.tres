@@ -1,9 +1,9 @@
-[gd_resource type="SpriteFrames" load_steps=3 format=3 uid="uid://b00dcfe4dtvkh"]
+[gd_resource type="SpriteFrames" load_steps=3 format=3 uid="uid://duvevjn0xmwyg"]
 
-[ext_resource type="Texture2D" uid="uid://cagyo41xspko" path="res://scenes/quests/story_quests/you/2_weapon/weapon_components/template_projectile.png" id="1_046b2"]
+[ext_resource type="Texture2D" uid="uid://cagyo41xspko" path="res://scenes/quests/story_quests/template/2_template_combat/template_combat_components/template_projectile.png" id="1_wllff"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a6ony"]
-atlas = ExtResource("1_046b2")
+atlas = ExtResource("1_wllff")
 region = Rect2(0, 0, 64, 64)
 
 [resource]

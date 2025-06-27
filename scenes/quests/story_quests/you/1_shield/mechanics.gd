@@ -5,6 +5,10 @@ extends Node2D
 @onready var timer = $OnTheGround/Helm/Timer
 @onready var camera = $OnTheGround/Player/Camera2D
 @onready var muro_salida = $TileMapLayers/MuroSalida
+@onready var claves: Label = $HelmHUD/Claves
+@onready var pistas = $OnTheGround/SequencePuzzle/Steps/SequencePuzzleStep1
+@onready var camera_solved = $OnTheGround/CollectibleItem/Camera2D
+@onready var camera_normal = $OnTheGround/Player/Camera2D
 
 var max_distance = 3500.0
 var min_distance = 300.0
@@ -19,6 +23,9 @@ func _process(delta: float) -> void:
 
 func _ready() -> void:
 	timer.start()
+	claves.text = "123"
+	print(pistas.sequence)
+	
 	
 func _on_timer_timeout() -> void:
 	helm.play()
@@ -33,3 +40,12 @@ func _on_timer_timeout() -> void:
 func _on_sequence_puzzle_solved() -> void:
 	muro_salida.visible = false
 	muro_salida.collision_enabled = false
+	switch_camera_temporarily(2.0)
+
+func switch_camera_temporarily(duration: float = 2.0) -> void:
+	# Cambiamos a la cámara especial
+	camera_solved.current = true
+	# Usamos un temporizador "await" para esperar 'duration' segundos
+	await get_tree().create_timer(duration).timeout
+	# Regresamos a la cámara del jugador
+	camera_normal.current = true
