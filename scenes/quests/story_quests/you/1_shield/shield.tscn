@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=4 uid="uid://nip4xba4g07p"]
+[gd_scene load_steps=31 format=4 uid="uid://nip4xba4g07p"]
 
 [ext_resource type="Script" uid="uid://dviu4ckbond2x" path="res://scenes/quests/story_quests/you/1_shield/mechanics.gd" id="1_4hkxb"]
 [ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="2_f16fo"]
@@ -35,6 +35,9 @@ name = ""
 type = 2
 metadata/_custom_type_script = "uid://bgmwplmj3bfls"
 
+[sub_resource type="LabelSettings" id="LabelSettings_eqd80"]
+font_size = 32
+
 [node name="HelmScene" type="Node2D"]
 script = ExtResource("1_4hkxb")
 
@@ -66,7 +69,6 @@ tile_map_data = PackedByteArray("AAAQACgAHAAAAAIAAAARACgAHAAAAAIAAAASACgAHAAAAAI
 tile_set = ExtResource("2_h7cn4")
 
 [node name="CanvasModulate" type="CanvasModulate" parent="TileMapLayers"]
-visible = false
 light_mask = 3
 position = Vector2(756, -83)
 color = Color(2.70735e-08, 0, 0.15702, 1)
@@ -97,12 +99,14 @@ position = Vector2(-1.90735e-06, -11)
 scale = Vector2(0.5, 0.5)
 color = Color(0.19921, 0.428185, 1, 0.701961)
 texture = ExtResource("4_yauao")
+texture_scale = 1.5
 
 [node name="SequencePuzzle" type="Node2D" parent="OnTheGround" node_paths=PackedStringArray("steps")]
 y_sort_enabled = true
 position = Vector2(-1, 0)
 script = ExtResource("3_tslbq")
 steps = [NodePath("Steps/SequencePuzzleStep1"), NodePath("Steps/SequencePuzzleStep2")]
+debug = true
 metadata/_custom_type_script = "uid://c68oh8dtr21ti"
 
 [node name="Objects" type="Node2D" parent="OnTheGround/SequencePuzzle"]
@@ -144,9 +148,6 @@ modulate = Color(0.544187, 0.52445, 0.542041, 1)
 position = Vector2(-508, 2781)
 audio_stream = ExtResource("11_gbu4a")
 
-[node name="Campfire" parent="OnTheGround/SequencePuzzle/Objects" instance=ExtResource("22_kmvk2")]
-position = Vector2(-1406, 649)
-
 [node name="Signs" type="Node2D" parent="OnTheGround/SequencePuzzle"]
 y_sort_enabled = true
 
@@ -179,6 +180,8 @@ item = SubResource("Resource_u8qfb")
 collected_dialogue = ExtResource("23_tgrcv")
 dialogue_title = &"well_done"
 
+[node name="Camera2D" type="Camera2D" parent="OnTheGround/CollectibleItem"]
+
 [node name="Sign" parent="OnTheGround" instance=ExtResource("17_757eh")]
 position = Vector2(-1071, 798)
 direction = 1
@@ -196,9 +199,73 @@ wait_time = 0.001
 
 [node name="Campfire" parent="OnTheGround/Campfires" instance=ExtResource("22_kmvk2")]
 position = Vector2(-1213, 780)
+light_fuerza = 1.5
+light_escala = 1.5
 
-[node name="Campfire2" parent="OnTheGround/Campfires" instance=ExtResource("22_kmvk2")]
-position = Vector2(-604, 897)
+[node name="Campfire3" parent="OnTheGround/Campfires" instance=ExtResource("22_kmvk2")]
+position = Vector2(-1051, 1102)
+light_fuerza = 1.5
+light_escala = 1.5
+
+[node name="Campfire4" parent="OnTheGround/Campfires" instance=ExtResource("22_kmvk2")]
+position = Vector2(1325, 2371)
+light_fuerza = 1.5
+light_escala = 1.5
+
+[node name="Campfire6" parent="OnTheGround/Campfires" instance=ExtResource("22_kmvk2")]
+position = Vector2(791, 2866)
+light_fuerza = 1.5
+light_escala = 1.5
+
+[node name="Campfire7" parent="OnTheGround/Campfires" instance=ExtResource("22_kmvk2")]
+position = Vector2(-151, 3139)
+light_fuerza = 1.5
+light_escala = 1.5
+
+[node name="Campfire8" parent="OnTheGround/Campfires" instance=ExtResource("22_kmvk2")]
+position = Vector2(288, 2432)
+light_fuerza = 1.5
+light_escala = 1.5
+
+[node name="Campfire9" parent="OnTheGround/Campfires" instance=ExtResource("22_kmvk2")]
+position = Vector2(-1306, 3342)
+light_fuerza = 1.5
+light_escala = 1.5
+
+[node name="Campfire10" parent="OnTheGround/Campfires" instance=ExtResource("22_kmvk2")]
+position = Vector2(-185, 2124)
+light_fuerza = 1.5
+light_escala = 1.5
+
+[node name="Campfire11" parent="OnTheGround/Campfires" instance=ExtResource("22_kmvk2")]
+position = Vector2(-677, 1807)
+light_fuerza = 1.5
+light_escala = 1.5
+
+[node name="Campfire12" parent="OnTheGround/Campfires" instance=ExtResource("22_kmvk2")]
+position = Vector2(1838, 907)
+light_fuerza = 1.5
+light_escala = 1.5
+
+[node name="Campfire13" parent="OnTheGround/Campfires" instance=ExtResource("22_kmvk2")]
+position = Vector2(1618, 2888)
+light_fuerza = 1.5
+light_escala = 1.5
+
+[node name="Campfire14" parent="OnTheGround/Campfires" instance=ExtResource("22_kmvk2")]
+position = Vector2(1646, 3164)
+light_fuerza = 1.5
+light_escala = 1.5
+
+[node name="Campfire15" parent="OnTheGround/Campfires" instance=ExtResource("22_kmvk2")]
+position = Vector2(1278, 3176)
+light_fuerza = 1.5
+light_escala = 1.5
+
+[node name="Campfire16" parent="OnTheGround/Campfires" instance=ExtResource("22_kmvk2")]
+position = Vector2(1313, 2888)
+light_fuerza = 1.5
+light_escala = 1.5
 
 [node name="ScreenOverlay" type="CanvasLayer" parent="."]
 
@@ -214,6 +281,13 @@ stream = ExtResource("25_kmvk2")
 volume_db = -15.0
 
 [node name="HelmHUD" type="CanvasLayer" parent="."]
+
+[node name="Claves" type="Label" parent="HelmHUD"]
+offset_right = 45.0
+offset_bottom = 23.0
+size_flags_vertical = 1
+text = "asdas"
+label_settings = SubResource("LabelSettings_eqd80")
 
 [connection signal="solved" from="OnTheGround/SequencePuzzle" to="." method="_on_sequence_puzzle_solved"]
 [connection signal="solved" from="OnTheGround/SequencePuzzle" to="OnTheGround/CollectibleItem" method="reveal"]

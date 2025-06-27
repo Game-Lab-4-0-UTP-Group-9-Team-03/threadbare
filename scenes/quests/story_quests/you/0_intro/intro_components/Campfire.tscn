@@ -1,12 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://dyaqkgw4w7w6u"]
+[gd_scene load_steps=4 format=3 uid="uid://dyaqkgw4w7w6u"]
 
 [ext_resource type="SpriteFrames" uid="uid://57k7dhourvod" path="res://scenes/quests/story_quests/you/0_intro/intro_components/campfire.tres" id="1_yadso"]
+[ext_resource type="Script" uid="uid://bq8eyb2h4cpuv" path="res://scenes/quests/story_quests/you/0_intro/intro_components/campfire.gd" id="2_dxxig"]
 [ext_resource type="Texture2D" uid="uid://d25ucpxiyxvuk" path="res://scenes/quests/story_quests/you/0_intro/intro_components/degradado_luz.png" id="2_mqg8x"]
 
 [node name="Campfire" type="AnimatedSprite2D"]
 scale = Vector2(3.00719, 3.00719)
 sprite_frames = ExtResource("1_yadso")
 autoplay = "default"
+script = ExtResource("2_dxxig")
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
 position = Vector2(4.00012, 4)
