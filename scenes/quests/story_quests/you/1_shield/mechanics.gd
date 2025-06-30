@@ -7,7 +7,7 @@ extends Node2D
 @onready var muro_salida = $TileMapLayers/MuroSalida
 @onready var claves: Label = $HelmHUD/Claves
 @onready var pistas = $OnTheGround/SequencePuzzle/Steps/SequencePuzzleStep1
-@onready var camera_solved = $OnTheGround/CollectibleItem/Camera2D
+@onready var camera_solved = $OnTheGround/CameraSolved
 @onready var camera_normal = $OnTheGround/Player/Camera2D
 
 var max_distance = 3500.0
@@ -44,8 +44,8 @@ func _on_sequence_puzzle_solved() -> void:
 
 func switch_camera_temporarily(duration: float = 2.0) -> void:
 	# Cambiamos a la cámara especial
-	camera_solved.current = true
+	camera_solved.make_current()
 	# Usamos un temporizador "await" para esperar 'duration' segundos
 	await get_tree().create_timer(duration).timeout
 	# Regresamos a la cámara del jugador
-	camera_normal.current = true
+	camera_normal.make_current()
