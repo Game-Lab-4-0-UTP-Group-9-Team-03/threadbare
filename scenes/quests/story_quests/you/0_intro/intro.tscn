@@ -329,7 +329,6 @@ next_scene = "uid://nip4xba4g07p"
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-visible = false
 light_mask = 3
 position = Vector2(756, -83)
 color = Color(2.70735e-08, 0, 0.15702, 1)
