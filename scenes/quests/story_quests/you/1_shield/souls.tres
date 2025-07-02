@@ -1,0 +1,23 @@
+[gd_resource type="SpriteFrames" load_steps=2 format=3 uid="uid://bccu3w8l7hads"]
+
+[ext_resource type="Texture2D" uid="uid://cktrx1puwe30g" path="res://scenes/quests/story_quests/you/1_shield/shield_components/souls.png" id="1_ialno"]
+
+[resource]
+resource_name = "SoulA"
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ialno")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ialno")
+}],
+"loop": true,
+"name": &"struck",
+"speed": 5.0
+}]

@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var player = $OnTheGround/Player
+@onready var player: CharacterBody2D = $OnTheGround/Player
 @onready var helm = $OnTheGround/Helm
 @onready var timer = $OnTheGround/Helm/Timer
 @onready var camera = $OnTheGround/Player/Camera2D
@@ -8,7 +8,9 @@ extends Node2D
 @onready var claves: Label = $HelmHUD/Claves
 @onready var pistas = $OnTheGround/SequencePuzzle/Steps/SequencePuzzleStep1
 @onready var camera_solved = $OnTheGround/CameraSolved
+@onready var music_solved = $Shield_collectible/Puzzle_Solved_Sound
 @onready var camera_normal = $OnTheGround/Player/Camera2D
+@onready var muro_salida_animation = $TileMapLayers/MuroSalida_Animation
 
 var max_distance = 3500.0
 var min_distance = 300.0
@@ -38,14 +40,17 @@ func _on_timer_timeout() -> void:
 
 
 func _on_sequence_puzzle_solved() -> void:
-	muro_salida.visible = false
-	muro_salida.collision_enabled = false
-	switch_camera_temporarily(2.0)
+	switch_camera_temporarily(2.41)
 
 func switch_camera_temporarily(duration: float = 2.0) -> void:
 	# Cambiamos a la cámara especial
 	camera_solved.make_current()
+	muro_salida_animation.play("desbloquear_salida")
+	music_solved.play()
 	# Usamos un temporizador "await" para esperar 'duration' segundos
 	await get_tree().create_timer(duration).timeout
 	# Regresamos a la cámara del jugador
 	camera_normal.make_current()
+	muro_salida.visible = false
+	muro_salida.collision_enabled = false
+	
