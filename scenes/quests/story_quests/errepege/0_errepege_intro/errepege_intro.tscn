@@ -2,7 +2,7 @@
 
 [ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="1_wlkku"]
 [ext_resource type="Texture2D" uid="uid://drc77v0hpct7p" path="res://scenes/quests/story_quests/errepege/errepege_player_components/Luna.png" id="2_jj14d"]
-[ext_resource type="SpriteFrames" uid="uid://vwf8e1v8brdp" path="res://scenes/quests/story_quests/template/template_player_components/template_player.tres" id="3_bw84c"]
+[ext_resource type="SpriteFrames" uid="uid://bcrujtl2qe5w5" path="res://scenes/quests/story_quests/errepege/errepege_player_components/errepege_player.tres" id="3_85km6"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_pja7a"]
 [ext_resource type="Resource" uid="uid://dnnb85vgldffb" path="res://scenes/quests/story_quests/errepege/0_errepege_intro/errepege_intro_components/errepege_intro.dialogue" id="5_85km6"]
 
@@ -132,7 +132,7 @@ y_sort_enabled = true
 [node name="Character" type="AnimatedSprite2D" parent="OnTheGround"]
 position = Vector2(400, 349)
 scale = Vector2(1.063, 1)
-sprite_frames = ExtResource("3_bw84c")
+sprite_frames = ExtResource("3_85km6")
 animation = &"idle"
 autoplay = "idle"
 
