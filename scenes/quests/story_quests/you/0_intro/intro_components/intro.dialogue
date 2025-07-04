@@ -12,7 +12,7 @@ do animation_player.animation_finished
 do animation_player.play(&"walk_up")
 do animation_player.animation_finished
 ¿Que es este lugar?
-¿Esa es una espada?
+¿Ese es un escudo?
 do animation_player.play(&"enter_level")
 do animation_player.animation_finished
 => END
