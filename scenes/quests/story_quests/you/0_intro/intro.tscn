@@ -1,10 +1,10 @@
-[gd_scene load_steps=21 format=4 uid="uid://cnvq84gqaliyg"]
+[gd_scene load_steps=23 format=4 uid="uid://cnvq84gqaliyg"]
 
 [ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="1_atosm"]
 [ext_resource type="PackedScene" uid="uid://dyaqkgw4w7w6u" path="res://scenes/quests/story_quests/you/0_intro/intro_components/Campfire.tscn" id="2_kdab4"]
 [ext_resource type="SpriteFrames" uid="uid://oin0166b7abc" path="res://scenes/quests/story_quests/you/player_components/template_player.tres" id="3_q8bdj"]
 [ext_resource type="Texture2D" uid="uid://d25ucpxiyxvuk" path="res://scenes/quests/story_quests/you/0_intro/intro_components/degradado_luz.png" id="4_dl30m"]
-[ext_resource type="Texture2D" uid="uid://bfvi5lkie7bcr" path="res://scenes/quests/story_quests/you/0_intro/intro_components/Sword_shadow.png" id="5_vxxo7"]
+[ext_resource type="Texture2D" uid="uid://c2iurvxiq8aqr" path="res://scenes/quests/story_quests/you/1_shield/shield_components/shadow_shield_collectible.png" id="5_q8bdj"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="6_r3aqy"]
 [ext_resource type="Resource" uid="uid://kndq8uav7kd6" path="res://scenes/quests/story_quests/you/0_intro/intro_components/intro.dialogue" id="7_q8bdj"]
 [ext_resource type="AudioStream" uid="uid://gkxxgsdh32lk" path="res://scenes/quests/story_quests/you/0_intro/intro_components/ambient_2.mp3" id="8_kd4em"]
@@ -211,6 +211,37 @@ _data = {
 &"walk_up": SubResource("Animation_rmlw4")
 }
 
+[sub_resource type="Animation" id="Animation_0i42s"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SwordShadow:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_00fog"]
+resource_name = "Sword_move"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SwordShadow:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
 [sub_resource type="Animation" id="Animation_vo1m8"]
 resource_name = "sword"
 length = 2.0
@@ -230,6 +261,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vrnek"]
 _data = {
+&"RESET": SubResource("Animation_0i42s"),
+&"Sword_move": SubResource("Animation_00fog"),
 &"sword": SubResource("Animation_vo1m8")
 }
 
@@ -295,10 +328,8 @@ texture = ExtResource("4_dl30m")
 [node name="SwordShadow" type="Sprite2D" parent="OnTheGround"]
 z_index = 1
 material = SubResource("CanvasItemMaterial_vo1m8")
-position = Vector2(1119, -378)
-rotation = -3.14159
-scale = Vector2(0.409456, 0.409456)
-texture = ExtResource("5_vxxo7")
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("5_q8bdj")
 
 [node name="PointLight2D" type="PointLight2D" parent="OnTheGround/SwordShadow"]
 position = Vector2(4.88428, -24.4227)
@@ -325,7 +356,7 @@ autoplay = "sword"
 script = ExtResource("6_r3aqy")
 dialogue = ExtResource("7_q8bdj")
 animation_player = NodePath("../OnTheGround/AnimationPlayer")
-next_scene = "uid://nip4xba4g07p"
+next_scene = "uid://bvhp3ok0sbva2"
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
