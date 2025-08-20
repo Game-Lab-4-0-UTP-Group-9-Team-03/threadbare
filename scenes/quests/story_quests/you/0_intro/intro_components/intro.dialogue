@@ -4,14 +4,23 @@
 ~ start
 do animation_player.play(&"walk_on")
 do animation_player.animation_finished
+do dialogo_1.play()
 Llevo mucho tiempo en este bosque..
-Ya nisiquiera se cuanto tiempo llevo caminando
+do dialogo_1.stop()
+do dialogo_2.play()
+Ya nisiquiera se cuanto tiempo llevo perdido
 do animation_player.play(&"walk_off")
 do animation_player.animation_finished
+do dialogo_2.stop()
+do dialogo_3.play()
 ¿Y esa luz?
 do animation_player.play(&"walk_up")
 do animation_player.animation_finished
+do dialogo_3.stop()
+do dialogo_4.play()
 ¿Que es este lugar?
+do dialogo_4.stop()
+do dialogo_5.play()
 ¿Ese es un escudo?
 do animation_player.play(&"enter_level")
 do animation_player.animation_finished

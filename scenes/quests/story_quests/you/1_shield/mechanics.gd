@@ -84,45 +84,51 @@ func _on_blue_kicked() -> void:
 
 
 func _on_pink_kicked() -> void:
+	pink.interact_area.disabled = true 
 	var tween = create_tween()
-	tween.tween_property(pink, "modulate:a", 0.0, 2.0)
-	await get_tree().create_timer(2).timeout
+	tween.tween_property(pink, "modulate:a", 0.0, 3.13)
+	await get_tree().create_timer(3.13).timeout
 	pink.process_mode = Node.PROCESS_MODE_DISABLED
 	pink.visible = false
 
 
 func _on_yellow_kicked() -> void:
+	yellow.interact_area.disabled = true 
 	var tween = create_tween()
-	tween.tween_property(yellow, "modulate:a", 0.0, 2.0)
-	await get_tree().create_timer(2).timeout
+	tween.tween_property(yellow, "modulate:a", 0.0, 3.13)
+	await get_tree().create_timer(3.13).timeout
 	yellow.process_mode = Node.PROCESS_MODE_DISABLED
 	yellow.visible = false
 
 func _on_green_kicked() -> void:
+	green.interact_area.disabled = true 
 	var tween = create_tween()
-	tween.tween_property(green, "modulate:a", 0.0, 2.0)
-	await get_tree().create_timer(2).timeout
+	tween.tween_property(green, "modulate:a", 0.0, .13)
+	await get_tree().create_timer(3.13).timeout
 	green.process_mode = Node.PROCESS_MODE_DISABLED
 	green.visible = false
 
 func _on_purple_kicked() -> void:
+	purple.interact_area.disabled = true 
 	var tween = create_tween()
-	tween.tween_property(purple, "modulate:a", 0.0, 2.0)
-	await get_tree().create_timer(2).timeout
+	tween.tween_property(purple, "modulate:a", 0.0, 3.13)
+	await get_tree().create_timer(3.13).timeout
 	purple.process_mode = Node.PROCESS_MODE_DISABLED
 	purple.visible = false
 
 func _on_red_kicked() -> void:
+	red.interact_area.disabled = true 
 	var tween = create_tween()
-	tween.tween_property(red, "modulate:a", 0.0, 2.0)
-	await get_tree().create_timer(2).timeout
+	tween.tween_property(red, "modulate:a", 0.0, 3.13)
+	await get_tree().create_timer(3.13).timeout
 	red.process_mode = Node.PROCESS_MODE_DISABLED
 	red.visible = false
 
 
 func _on_jamaica_kicked() -> void:
+	jamaica.interact_area.disabled = true 
 	var tween = create_tween()
-	tween.tween_property(jamaica, "modulate:a", 0.0, 2.0)
-	await get_tree().create_timer(2).timeout
+	tween.tween_property(jamaica, "modulate:a", 0.0, 3.13)
+	await get_tree().create_timer(3.13).timeout
 	jamaica.process_mode = Node.PROCESS_MODE_DISABLED
 	jamaica.visible = false

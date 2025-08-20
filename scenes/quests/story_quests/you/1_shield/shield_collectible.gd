@@ -1,9 +1,11 @@
 extends Node2D
 @onready var portal: AudioStreamPlayer2D = $portal
+@onready var dialogo_final: AudioStreamPlayer = $"../dialogo_final"
 @export var spawn_point_path: String
 @export_file("*.tscn") var next_scene: String
 
 func _on_interact_area_interaction_started(player: Player, from_right: bool) -> void:
+	dialogo_final.play()
 	portal.play()
 	var item1 = InventoryItem.with_type(InventoryItem.ItemType.IMAGINATION)
 	var item2 = InventoryItem.with_type(InventoryItem.ItemType.MEMORY)

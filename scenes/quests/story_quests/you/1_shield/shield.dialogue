@@ -1,18 +1,38 @@
 # SPDX-FileCopyrightText: The Threadbare Authors
 # SPDX-License-Identifier: MPL-2.0
 ~ start
+do dialogo_1.play()
 ¿Donde estoy? ¿Que suena asi?
+do dialogo_1.stop()
+do dialogo_2.play()
 Eso es... ¿un corazón?
+do dialogo_2.stop()
+do dialogo_3.play()
 Tengo que salir de aqui rapido...
 => END
 ~ show_sing
+do puzzle_1.play()
 Siente el pulso en la oscuridad,
+do puzzle_1.stop()
+do puzzle_2.play()
 guía tus pasos con voluntad.
+do puzzle_2.stop()
+do puzzle_3.play()
 Siete latidos, siete caminos,
+do puzzle_3.stop()
+do puzzle_4.play()
 marcados están los destinos.
+do puzzle_4.stop()
+do puzzle_5.play()
 Donde retumba más fuerte el corazón,
+do puzzle_5.stop()
+do puzzle_6.play()
 hallarás almas en desolación.
+do puzzle_6.stop()
+do puzzle_7.play()
 Solo al rescatar a cada una en su andar,
+do puzzle_7.stop()
+do puzzle_8.play()
 podrás de aqui escapar.
 => END
 ~ well_done
