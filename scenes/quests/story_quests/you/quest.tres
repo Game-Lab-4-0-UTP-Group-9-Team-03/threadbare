@@ -5,7 +5,10 @@
 [resource]
 script = ExtResource("1_trrcb")
 title = "You"
-description = "Ven joven, te contare una historia acerca de un antiguo guerrero que como tú trató de convertirse en un protector de historias, pero algo terrible sucedio y su historia fue olvidada por casi todo el mundo, hace poco encontre su diario en donde se narra su ultima memoria, un alma rota y llena de miedo. Te adentraras en sus miedos y mas profundos pensamientos es una mision que solo puedo encomendartela a ti. Mantente firme y protege tu mente. Buena suerte."
+description = "------------------------------------------
+PARA UNA MEJOR EXPERIENCIA SE RECOMIENDA UTILIZAR AURICULARES
+------------------------------------------
+Ven joven, te contare una historia acerca de un antiguo guerrero que como tú trató de convertirse en un protector de historias, pero algo terrible sucedio y su historia fue olvidada por casi todo el mundo, hace poco encontre su diario en donde se narra su ultima memoria, un alma rota y llena de miedo. Te adentraras en sus miedos y mas profundos pensamientos es una mision que solo puedo encomendartela a ti. Mantente firme y protege tu mente. Buena suerte."
 authors = Array[String](["Genaro Robles", "Alex Velasquez"])
 affiliation = ""
 first_scene = "uid://cnvq84gqaliyg"

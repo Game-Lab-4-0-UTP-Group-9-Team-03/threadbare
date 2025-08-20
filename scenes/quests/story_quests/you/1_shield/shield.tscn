@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=4 uid="uid://nip4xba4g07p"]
+[gd_scene load_steps=46 format=4 uid="uid://nip4xba4g07p"]
 
 [ext_resource type="Script" uid="uid://dviu4ckbond2x" path="res://scenes/quests/story_quests/you/1_shield/mechanics.gd" id="1_4hkxb"]
 [ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="2_f16fo"]
@@ -9,22 +9,34 @@
 [ext_resource type="SpriteFrames" uid="uid://oin0166b7abc" path="res://scenes/quests/story_quests/you/player_components/template_player.tres" id="4_eqd80"]
 [ext_resource type="Texture2D" uid="uid://d25ucpxiyxvuk" path="res://scenes/quests/story_quests/you/0_intro/intro_components/degradado_luz.png" id="4_yauao"]
 [ext_resource type="SpriteFrames" uid="uid://bccu3w8l7hads" path="res://scenes/quests/story_quests/you/1_shield/souls.tres" id="9_eqd80"]
-[ext_resource type="AudioStream" uid="uid://b5e2ta2sip1m6" path="res://scenes/quests/story_quests/you/1_shield/shield_components/soul_free.mp3" id="10_tgrcv"]
+[ext_resource type="AudioStream" uid="uid://3aagj243y8g" path="res://scenes/quests/story_quests/you/1_shield/shield_components/soul_free_1.mp3" id="10_onjrw"]
 [ext_resource type="PackedScene" uid="uid://be4o3ythda4cu" path="res://scenes/game_elements/props/sequence_puzzle_hint_sign/sequence_puzzle_hint_sign.tscn" id="11_7laxn"]
 [ext_resource type="Script" uid="uid://ccc78coj2b1li" path="res://scenes/game_logic/sequence_puzzle_step.gd" id="13_ewc4v"]
-[ext_resource type="AudioStream" uid="uid://cp0g555tuc7jy" path="res://scenes/quests/story_quests/you/1_shield/shield_components/piedra.mp3" id="17_h7cn4"]
+[ext_resource type="AudioStream" uid="uid://p4f17lk01pxx" path="res://scenes/quests/story_quests/you/1_shield/shield_components/corazon_latidos.mp3" id="14_onjrw"]
+[ext_resource type="Script" uid="uid://br7ir6yxqvpsr" path="res://scenes/quests/story_quests/you/1_shield/shield_components/cinematic_shield.gd" id="16_ro61v"]
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="18_fip7f"]
 [ext_resource type="Script" uid="uid://8an8stu7c5yr" path="res://scenes/quests/story_quests/you/1_shield/instructions.gd" id="19_5n6tm"]
-[ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="19_7si2r"]
-[ext_resource type="AudioStream" uid="uid://c8ix5ei2gt3mj" path="res://scenes/quests/story_quests/you/1_shield/shield_components/corazon.mp3" id="19_xoiap"]
+[ext_resource type="AudioStream" uid="uid://df26xapjpynb5" path="res://scenes/quests/story_quests/you/1_shield/shield_components/lamentos.mp3" id="19_onjrw"]
 [ext_resource type="Texture2D" uid="uid://c3l7lhhu5de88" path="res://assets/third_party/tiny-swords/Deco/16.png" id="21_a0hb5"]
 [ext_resource type="PackedScene" uid="uid://dyaqkgw4w7w6u" path="res://scenes/quests/story_quests/you/0_intro/intro_components/Campfire.tscn" id="22_kmvk2"]
 [ext_resource type="AudioStream" uid="uid://ckl6uomdka4el" path="res://scenes/quests/story_quests/you/1_shield/shield_components/esquizofrenia_voces.mp3" id="23_h7cn4"]
+[ext_resource type="AudioStream" uid="uid://brf2aohihfkwr" path="res://scenes/quests/story_quests/you/1_shield/shield_components/puzzle_solved.mp3" id="23_ro61v"]
 [ext_resource type="Resource" uid="uid://4ayu2nyp6p6h" path="res://scenes/quests/story_quests/you/1_shield/shield.dialogue" id="23_tgrcv"]
 [ext_resource type="Texture2D" uid="uid://bfvi5lkie7bcr" path="res://scenes/quests/story_quests/you/0_intro/intro_components/Sword_shadow.png" id="24_a0hb5"]
 [ext_resource type="AudioStream" uid="uid://bol82ygsk1q1r" path="res://scenes/quests/story_quests/you/1_shield/shield_components/portal_sound.mp3" id="25_00fog"]
+[ext_resource type="AudioStream" uid="uid://wdb6t8y2tysi" path="res://scenes/quests/story_quests/you/1_shield/shield_components/shield_dialogo_1.mp3" id="26_ro61v"]
 [ext_resource type="PackedScene" uid="uid://dutgnbiy7xalb" path="res://scenes/game_elements/props/interact_area/interact_area.tscn" id="27_eqd80"]
+[ext_resource type="AudioStream" uid="uid://bfhln7i2dcvj0" path="res://scenes/quests/story_quests/you/1_shield/shield_components/shield_dialogo_2.mp3" id="27_onjrw"]
 [ext_resource type="Script" uid="uid://drtc7rk1se5t8" path="res://scenes/quests/story_quests/you/1_shield/shield_collectible.gd" id="27_tgrcv"]
+[ext_resource type="AudioStream" uid="uid://dkikquebxeuwh" path="res://scenes/quests/story_quests/you/1_shield/shield_components/shield_dialogo_3.mp3" id="28_buobc"]
+[ext_resource type="AudioStream" uid="uid://dd45cqhxo5wyc" path="res://scenes/quests/story_quests/you/1_shield/shield_components/shield_puzzle_1.mp3" id="29_oeu6p"]
+[ext_resource type="AudioStream" uid="uid://73srjfdhq1nq" path="res://scenes/quests/story_quests/you/1_shield/shield_components/shield_puzzle_2.mp3" id="30_h3gc8"]
+[ext_resource type="AudioStream" uid="uid://b7rn3tww5unjm" path="res://scenes/quests/story_quests/you/1_shield/shield_components/shield_puzzle_3.mp3" id="31_tbpbx"]
+[ext_resource type="AudioStream" uid="uid://bpkq8yeovvnl2" path="res://scenes/quests/story_quests/you/1_shield/shield_components/shield_puzzle_4.mp3" id="32_sd5og"]
+[ext_resource type="AudioStream" uid="uid://dmt8goaflcjll" path="res://scenes/quests/story_quests/you/1_shield/shield_components/shield_puzzle_5.mp3" id="33_wyuwd"]
+[ext_resource type="AudioStream" uid="uid://blujm52s5f0ks" path="res://scenes/quests/story_quests/you/1_shield/shield_components/shield_puzzle_6.mp3" id="34_63jtg"]
+[ext_resource type="AudioStream" uid="uid://clpf0e6edk67a" path="res://scenes/quests/story_quests/you/1_shield/shield_components/shield_puzzle_7.mp3" id="35_cmq7k"]
+[ext_resource type="AudioStream" uid="uid://b0jlb0c6w2q4n" path="res://scenes/quests/story_quests/you/1_shield/shield_components/shield_puzzle_8.mp3" id="36_rcyyi"]
 
 [sub_resource type="Animation" id="Animation_tgrcv"]
 length = 0.001
@@ -184,8 +196,9 @@ position = Vector2(356, 453)
 process_mode = 4
 visible = false
 position = Vector2(-1400, 604)
+collision_layer = 0
 sprite_frames = ExtResource("9_eqd80")
-audio_stream = ExtResource("10_tgrcv")
+audio_stream = ExtResource("10_onjrw")
 
 [node name="AnimatedSprite2D" parent="OnTheGround/SequencePuzzle/Objects/Blue" index="0"]
 sprite_frames = ExtResource("9_eqd80")
@@ -194,14 +207,14 @@ sprite_frames = ExtResource("9_eqd80")
 action = "Salvar"
 
 [node name="AudioStreamPlayer2D" parent="OnTheGround/SequencePuzzle/Objects/Blue" index="3"]
-stream = ExtResource("10_tgrcv")
+stream = ExtResource("10_onjrw")
 
 [node name="Pink" parent="OnTheGround/SequencePuzzle/Objects" instance=ExtResource("4_886p4")]
 process_mode = 4
 visible = false
 position = Vector2(1406, 476)
 sprite_frames = ExtResource("9_eqd80")
-audio_stream = ExtResource("10_tgrcv")
+audio_stream = ExtResource("10_onjrw")
 
 [node name="AnimatedSprite2D" parent="OnTheGround/SequencePuzzle/Objects/Pink" index="0"]
 scale = Vector2(-0.7, 0.7)
@@ -211,14 +224,14 @@ sprite_frames = ExtResource("9_eqd80")
 action = "Salvar"
 
 [node name="AudioStreamPlayer2D" parent="OnTheGround/SequencePuzzle/Objects/Pink" index="3"]
-stream = ExtResource("10_tgrcv")
+stream = ExtResource("10_onjrw")
 
 [node name="Yellow" parent="OnTheGround/SequencePuzzle/Objects" instance=ExtResource("4_886p4")]
 process_mode = 4
 visible = false
 position = Vector2(-1113, 1369)
 sprite_frames = ExtResource("9_eqd80")
-audio_stream = ExtResource("10_tgrcv")
+audio_stream = ExtResource("10_onjrw")
 
 [node name="AnimatedSprite2D" parent="OnTheGround/SequencePuzzle/Objects/Yellow" index="0"]
 scale = Vector2(-0.7, 0.7)
@@ -228,14 +241,14 @@ sprite_frames = ExtResource("9_eqd80")
 action = "Salvar"
 
 [node name="AudioStreamPlayer2D" parent="OnTheGround/SequencePuzzle/Objects/Yellow" index="3"]
-stream = ExtResource("10_tgrcv")
+stream = ExtResource("10_onjrw")
 
 [node name="Green" parent="OnTheGround/SequencePuzzle/Objects" instance=ExtResource("4_886p4")]
 process_mode = 4
 visible = false
 position = Vector2(-1656, 2835)
 sprite_frames = ExtResource("9_eqd80")
-audio_stream = ExtResource("10_tgrcv")
+audio_stream = ExtResource("10_onjrw")
 
 [node name="AnimatedSprite2D" parent="OnTheGround/SequencePuzzle/Objects/Green" index="0"]
 sprite_frames = ExtResource("9_eqd80")
@@ -244,14 +257,14 @@ sprite_frames = ExtResource("9_eqd80")
 action = "Salvar"
 
 [node name="AudioStreamPlayer2D" parent="OnTheGround/SequencePuzzle/Objects/Green" index="3"]
-stream = ExtResource("10_tgrcv")
+stream = ExtResource("10_onjrw")
 
 [node name="Purple" parent="OnTheGround/SequencePuzzle/Objects" instance=ExtResource("4_886p4")]
 process_mode = 4
 visible = false
 position = Vector2(-537, 1771)
 sprite_frames = ExtResource("9_eqd80")
-audio_stream = ExtResource("10_tgrcv")
+audio_stream = ExtResource("10_onjrw")
 
 [node name="AnimatedSprite2D" parent="OnTheGround/SequencePuzzle/Objects/Purple" index="0"]
 sprite_frames = ExtResource("9_eqd80")
@@ -260,14 +273,14 @@ sprite_frames = ExtResource("9_eqd80")
 action = "Salvar"
 
 [node name="AudioStreamPlayer2D" parent="OnTheGround/SequencePuzzle/Objects/Purple" index="3"]
-stream = ExtResource("10_tgrcv")
+stream = ExtResource("10_onjrw")
 
 [node name="Red" parent="OnTheGround/SequencePuzzle/Objects" instance=ExtResource("4_886p4")]
 process_mode = 4
 visible = false
 position = Vector2(-68, 2090)
 sprite_frames = ExtResource("9_eqd80")
-audio_stream = ExtResource("10_tgrcv")
+audio_stream = ExtResource("10_onjrw")
 
 [node name="AnimatedSprite2D" parent="OnTheGround/SequencePuzzle/Objects/Red" index="0"]
 sprite_frames = ExtResource("9_eqd80")
@@ -276,14 +289,14 @@ sprite_frames = ExtResource("9_eqd80")
 action = "Salvar"
 
 [node name="AudioStreamPlayer2D" parent="OnTheGround/SequencePuzzle/Objects/Red" index="3"]
-stream = ExtResource("10_tgrcv")
+stream = ExtResource("10_onjrw")
 
 [node name="Jamaica" parent="OnTheGround/SequencePuzzle/Objects" instance=ExtResource("4_886p4")]
 process_mode = 4
 visible = false
 position = Vector2(-512, 2818)
 sprite_frames = ExtResource("9_eqd80")
-audio_stream = ExtResource("10_tgrcv")
+audio_stream = ExtResource("10_onjrw")
 
 [node name="AnimatedSprite2D" parent="OnTheGround/SequencePuzzle/Objects/Jamaica" index="0"]
 sprite_frames = ExtResource("9_eqd80")
@@ -292,7 +305,7 @@ sprite_frames = ExtResource("9_eqd80")
 action = "Salvar"
 
 [node name="AudioStreamPlayer2D" parent="OnTheGround/SequencePuzzle/Objects/Jamaica" index="3"]
-stream = ExtResource("10_tgrcv")
+stream = ExtResource("10_onjrw")
 
 [node name="Signs" type="Node2D" parent="OnTheGround/SequencePuzzle"]
 y_sort_enabled = true
@@ -314,7 +327,8 @@ zoom = Vector2(3, 3)
 
 [node name="Helm" type="AudioStreamPlayer2D" parent="OnTheGround"]
 position = Vector2(1472, 3035)
-stream = ExtResource("19_xoiap")
+stream = ExtResource("14_onjrw")
+volume_db = 10.0
 max_distance = 4096.0
 
 [node name="Timer" type="Timer" parent="OnTheGround/Helm"]
@@ -415,16 +429,20 @@ light_escala = 1.5
 [node name="ScreenOverlay" type="CanvasLayer" parent="."]
 
 [node name="HUD" parent="." instance=ExtResource("18_fip7f")]
+visible = false
 
 [node name="Cinematic" type="Node2D" parent="."]
-script = ExtResource("19_7si2r")
+script = ExtResource("16_ro61v")
 dialogue = ExtResource("23_tgrcv")
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"
 
 [node name="fondo" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("23_h7cn4")
-volume_db = -20.0
+volume_db = -15.0
 autoplay = true
+
+[node name="dialogo_final" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("19_onjrw")
 
 [node name="instructions" type="Node2D" parent="."]
 position = Vector2(-833, 799)
@@ -456,8 +474,7 @@ position = Vector2(-1.5, 8)
 shape = SubResource("RectangleShape2D_xcq2w")
 
 [node name="Puzzle_Solved_Sound" type="AudioStreamPlayer" parent="Shield_collectible"]
-stream = ExtResource("17_h7cn4")
-volume_db = 10.0
+stream = ExtResource("23_ro61v")
 
 [node name="SwordShadow" type="Sprite2D" parent="Shield_collectible"]
 z_index = 1
@@ -481,6 +498,44 @@ autoplay = "sword"
 
 [node name="portal" type="AudioStreamPlayer2D" parent="Shield_collectible"]
 stream = ExtResource("25_00fog")
+volume_db = 5.0
+
+[node name="Intro_dialogo" type="Node2D" parent="."]
+
+[node name="dialogo_1" type="AudioStreamPlayer" parent="Intro_dialogo"]
+stream = ExtResource("26_ro61v")
+
+[node name="dialogo_2" type="AudioStreamPlayer" parent="Intro_dialogo"]
+stream = ExtResource("27_onjrw")
+
+[node name="dialogo_3" type="AudioStreamPlayer" parent="Intro_dialogo"]
+stream = ExtResource("28_buobc")
+
+[node name="Puzzle_dialogo" type="Node2D" parent="."]
+
+[node name="puzzle_1" type="AudioStreamPlayer" parent="Puzzle_dialogo"]
+stream = ExtResource("29_oeu6p")
+
+[node name="puzzle_2" type="AudioStreamPlayer" parent="Puzzle_dialogo"]
+stream = ExtResource("30_h3gc8")
+
+[node name="puzzle_3" type="AudioStreamPlayer" parent="Puzzle_dialogo"]
+stream = ExtResource("31_tbpbx")
+
+[node name="puzzle_4" type="AudioStreamPlayer" parent="Puzzle_dialogo"]
+stream = ExtResource("32_sd5og")
+
+[node name="puzzle_5" type="AudioStreamPlayer" parent="Puzzle_dialogo"]
+stream = ExtResource("33_wyuwd")
+
+[node name="puzzle_6" type="AudioStreamPlayer" parent="Puzzle_dialogo"]
+stream = ExtResource("34_63jtg")
+
+[node name="puzzle_7" type="AudioStreamPlayer" parent="Puzzle_dialogo"]
+stream = ExtResource("35_cmq7k")
+
+[node name="puzzle_8" type="AudioStreamPlayer" parent="Puzzle_dialogo"]
+stream = ExtResource("36_rcyyi")
 
 [connection signal="solved" from="OnTheGround/SequencePuzzle" to="." method="_on_sequence_puzzle_solved"]
 [connection signal="kicked" from="OnTheGround/SequencePuzzle/Objects/Blue" to="." method="_on_blue_kicked"]
